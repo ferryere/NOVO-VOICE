@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRT Cinema - Gerador de Narração</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .font-heading { font-family: 'Oswald', sans-serif; }
+      .font-body { font-family: 'Roboto', sans-serif; }
+      body {
+        /* Darker, cinematic background inspired by the screenshot */
+        background-color: #100E19;
+        background-image: radial-gradient(at 10% 10%, hsla(259, 58%, 18%, 0.4) 0px, transparent 50%),
+                          radial-gradient(at 90% 95%, hsla(240, 60%, 15%, 0.3) 0px, transparent 50%),
+                          radial-gradient(at 50% 50%, hsla(270, 30%, 12%, 0.2) 0px, transparent 70%);
+      }
+    </style>
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.js" async></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+</head>
+  <body class="text-neutral-200 font-body">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

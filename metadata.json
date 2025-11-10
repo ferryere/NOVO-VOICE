@@ -1,0 +1,5 @@
+{
+  "name": "Deploy",
+  "description": "An application to generate high-quality voice-overs from text or SRT files using Gemini AI.",
+  "requestFramePermissions": []
+}
